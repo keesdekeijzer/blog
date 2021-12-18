@@ -1,4 +1,5 @@
 # Blog
 
-Een blog website
+Een blog website gestart op 18-12-2021
+
 
