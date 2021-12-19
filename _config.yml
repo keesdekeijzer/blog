@@ -29,11 +29,20 @@ url: "https://keesdekeijzer.github.io" # the base hostname & protocol for your s
 domain: keesdekeijzer.github.io
 twitter_username: jekyllrb
 github_username:  jekyll
+github: [metadata]
 
+logo: /assets/img/logo.png
+google_analytics:
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 8
+paginate_path: "posts/page:num/"
+repo: blog
+rssfeed: feed.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default.

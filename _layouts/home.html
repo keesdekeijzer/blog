@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+{% include kopmenu.html %}
+<div class="container"><div class="midden"><article id="Artikel"><div id="submenu"></div><h1>Artikelen</h1>
+{% for post in paginator.posts %}
+<p><a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>- {{post.description}}</p>
+{% endfor %}
+{% include paginator.html %}
+{{ content }}
+</article>
+<nav id="nav"><!-- menu -->
+{% include archive.html %}
+</nav>
+{% include footer.html %}
+</div><!-- midden -->
+</div><!-- container -->
+</body>
+</html>
+
