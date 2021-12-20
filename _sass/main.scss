@@ -1,3 +1,6 @@
+---
+---
+
 @import "fonts";
 @import "rouge-github";
 
@@ -200,7 +203,7 @@ html {
   height: 100%;
 }
 
-body {  
+body {
     font-family: Liberation Sans, Arial, sans-serif;
     background-color: var(--body_kleur);
     color: var(--tekst_body);
@@ -211,7 +214,7 @@ body {
 
 .container{
     margin: 0 auto;
-    max-width: 120ch;    
+    max-width: 120ch;
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 2rem);
@@ -732,7 +735,7 @@ font-weight: bold;
 
 /*form */
 form {
-    display: block;		
+    display: block;
     /*background: var(--form_kleur); */
     padding: 2rem;
 }
@@ -746,12 +749,12 @@ select {
 		padding: 1rem;
 		outline: none;
 		width: 95%;
-		/*background: var(--invoer_kleur); 
+		/*background: var(--invoer_kleur);
 		color: var(--invoer_tekst);*/
 }
 
 select {
-		padding: 0; 
+		padding: 0;
 }
 
 input[type="text"]:focus,
@@ -759,11 +762,11 @@ input[type="password"]:focus,
 textarea:focus {
 		border: 1px solid var(--invoer_focus_border);
  		/*color: var(--invoer_focus_tekst);*/
-		box-shadow:  0 0 3px rgba(0,0,0,.2); 
+		box-shadow:  0 0 3px rgba(0,0,0,.2);
 }
 
 textarea {
-		min-height: 6rem; 
+		min-height: 6rem;
 		width: 95%;
 }
 
@@ -773,7 +776,7 @@ legend {
 }
 
 input[type="checkbox"] {
-		display: inline; 
+		display: inline;
 }
 
 button {
@@ -814,8 +817,8 @@ mark{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: var(--pop_zwart); 
-  background-color: var(--pop_zwartx);  
+  background-color: var(--pop_zwart);
+  background-color: var(--pop_zwartx);
 }
 
 .modal-content {
@@ -881,7 +884,7 @@ mark{
 
 .tabcontent {
   display: none;
-} 
+}
 
 .tabcontent {
   animation: fadeEffect 1s;
@@ -899,7 +902,7 @@ mark{
     /*margin-left: -8em;*/
     width: 100%;
     padding-bottom: 1rem;
-    
+
 }
 
 .weblink hr{
@@ -994,11 +997,11 @@ width: 3rem;
 height: 1rem;
 float: left;
 text-align: center;
-}    
+}
 
 .kalenderwd {
 color: var(--kleur_kopmenu);
-} 
+}
 
 /* linkkolom */
 
@@ -1092,7 +1095,7 @@ color: var(--kleur_kopmenu);
     white-space: normal;
     margin: 0;
     padding: 0;
-    list-style:none outside none; 	
+    list-style:none outside none;
 	border:0px;
 	margin-bottom: 1rem;
 }
@@ -1237,7 +1240,7 @@ color: var(--kleur_kopmenu);
     white-space: normal;
     margin: 0;
     padding: 0;
-    list-style:none outside none; 	
+    list-style:none outside none;
 	border:0px;
 	margin-bottom: 1rem;
 }
@@ -1265,7 +1268,7 @@ white-space: normal;
 }
 
 .pagination ul {
-display: inline;  
+display: inline;
 }
 
 .pagination li {
@@ -1312,4 +1315,4 @@ a.rssfeed:after {
   margin: 0 0 0 5px;
 }
 
-
+@import "extra";
