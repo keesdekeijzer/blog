@@ -19,21 +19,20 @@
   <body>
     <div class="kopmenu" id="kopmenu2">
     <ul class="nieuws-menu">
-    <li><a href='index'>blog</a></li>
+    <li><a href='../../../index'>blog</a></li>
+    <li><a href='../../../links'>links</a></li>
+    <li><a href='../../../about'>about</a></li>
     </ul>
     </div> <!-- kopmenu -->
-<div class="container houder"><div class="midden"><article id="Artikel"><div id="submenu"></div><h1>Artikelen</h1>
-{% for post in paginator.posts %}
-<p><a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>- {{post.description}}</p>
-{% endfor %}
-{% include paginator.html %}
+<div class="container houder"><div class="midden"><article id="Artikel"><div id="submenu"></div>
 {{ content }}
 </article>
 <nav id="nav"><!-- menu -->
-{% include archive.html %}
+{% include archive-post.html %}
 </nav>
 {% include footer.html %}
 </div><!-- midden -->
 </div><!-- container -->
+<script src="{{ "assets/js/tekstVervangen.js" | relative_url }}"></script>
 </body>
 </html>

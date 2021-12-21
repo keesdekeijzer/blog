@@ -14,9 +14,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
+    {% include stijl.html %}
 </head>
 <body>
-{% include kopmenu-tags.html %}
+  <div class="kopmenu" id="kopmenu2">
+  <ul class="nieuws-menu">
+  <li><a href='../index'>blog</a></li>
+  <li><a href='../links'>links</a></li>
+  <li><a href='../about'>about</a></li>
+  </ul>
+  </div> <!-- kopmenu -->
 <header>
 {% if site.logo %}<a href="/{{ site.repo }}/index"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>{% endif %}
 </header>

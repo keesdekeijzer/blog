@@ -1,0 +1,12 @@
+---
+layout: defaultpost
+---
+{{content}}
+<aside>{{ page.date | date: "%-d %B %Y" }}
+door {{ page.author | default: site.author }}</aside>
+<p style="white-space: normal;">tags:&nbsp;
+{% for tag in page.tags %}
+{% capture tag_name %}{{ tag }}{% endcapture %}
+<a href="../../../tag/{{ tag_name }}"><strong><nobr>{{ tag_name }}</nobr></strong></a>&nbsp;
+{% endfor %}
+</p>
