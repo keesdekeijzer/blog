@@ -17,24 +17,18 @@
     {% include stijl.html %}
 </head>
 <body>
-  <div class="kopmenu" id="kopmenu2">
-  <ul class="nieuws-menu">
-  <li><a href='../index'>blog</a></li>
-  <li><a href='../links'>links</a></li>
-  <li><a href='../about'>about</a></li>
-  </ul>
-  </div> <!-- kopmenu -->
-<header>
-{% if site.logo %}<a href="/{{ site.repo }}/index"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>{% endif %}
-</header>
-<div class="container">
-<div class="midden">
-<article id="Artikel">
-<div id="submenu"></div>
+<div class="kopmenu" id="kopmenu2">
+<ul class="nieuws-menu">
+<li><a href='../index'>blog</a></li>
+<li><a href='../links'>links</a></li>
+<li><a href='../about'>about</a></li>
+</ul>
+</div> <!-- kopmenu -->
+<div class="container"><div class="midden"><article id="Artikel"><div id="submenu"></div>
 {{ content }}
 </article>
 <nav id="nav"><!-- menu -->
-{% include archive-tags.html %}
+{% include archive.html %}
 </nav>
 {% include footer.html %}
 </div><!-- midden -->

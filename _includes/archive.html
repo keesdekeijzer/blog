@@ -12,7 +12,18 @@
 {% for temptag in sortedtemptags %}
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+  {% case page.layout %}
+  {% when 'post' %}
+    {% if page.category %}
+    <a href="../../../../tag/{{ tagname }}" class="knop">{{ tagname }}</a>&nbsp;-&nbsp;
+    {% else %}
+    <a href="../../../tag/{{ tagname }}" class="knop">{{ tagname }}</a>&nbsp;-&nbsp;
+    {% endif %}
+  {% when 'tagpage' %}
+  <a href="{{ tagname }}" class="knop">{{ tagname }}</a>&nbsp;-&nbsp;
+  {% else %}
   <a href="tag/{{ tagname }}" class="knop">{{ tagname }}</a>&nbsp;-&nbsp;
+  {% endcase %}
 {% endfor %}
 </p>
 </div>

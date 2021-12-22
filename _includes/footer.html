@@ -1,6 +1,20 @@
 <footer">
-<h2>Blog</h2>
-<p>subscribe <a href="/blog/feed.xml">via RSS</a></p>
+<p>Blog {{ page.layout }}</p>
+{% case page.layout %}
+{% when 'post' %}
+{% if page.category %}
+{% assign pad = '../../../../assets/img/rssfeed.png' %}
+{% else %}
+{% assign pad = '../../../assets/img/rssfeed.png' %}
+{% endif %}
+{% when 'tagpage' %}
+{% assign pad = '../assets/img/rssfeed.png' %}
+{% when 'home' %}
+{% assign pad = 'assets/img/rssfeed.png' %}
+{% else %}
+{% assign pad = 'assets/img/rssfeed.png' %}
+{% endcase %}
+<p>subscribe <a href="/blog/feed.xml"><img src="{{ pad }}">via RSS</a></p>
 <div><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
 <div>
 {% if site.github.is_project_page %}

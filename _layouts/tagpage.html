@@ -1,8 +1,7 @@
 ---
 layout: defaulttags
 ---
-<div class="post">
-<h1>Tag: {{ page.tag }}</h1>
+<div class="post"><h1>Tag: {{ page.tag }}</h1>
 <ul>
 {% for post in site.tags[page.tag] %}
   <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
@@ -11,4 +10,3 @@ layout: defaulttags
 {% endfor %}
 </ul>
 </div>
-
