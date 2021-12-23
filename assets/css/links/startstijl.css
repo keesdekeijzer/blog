@@ -26,7 +26,7 @@ text-align: center;
 .kolom1 {
 background-color: #FFFFCC;
 /* background-image: url(../plaatjes/geel225.jpg); */
-font-size: 12px;
+/* ont-size: 12px; */
 }
 
 .kolom2 {
@@ -53,7 +53,7 @@ background-color: #FFFFCC;
 .footer {
 text-align: center;
 /* background-image: url(../plaatjes/blauw835.jpg); */
-} 
+}
 
 img.lijst {
 	vertical-align: text-bottom;
@@ -64,7 +64,7 @@ img.lijst {
 }
 
 ul {
-	list-style:none outside none; 	
+	list-style:none outside none;
 	margin:0px;
 	padding:0px;
 	border:0px;
@@ -106,7 +106,7 @@ li a:active {
 	text-decoration: none;
 }
 
-h3 { 	
+h3 {
 	background-color: #c26bff;
 	/* background-image: url(../plaatjes/hout.jpg); */
 	font-size: 24px;
@@ -147,7 +147,7 @@ height: 30px;
 float: left;
 font-size: 14px;
 }
-    
+
 .kalender {
 width: 30px;
 height: 30px;
@@ -155,7 +155,7 @@ float: left;
 color: black;
 font-size: 14px;
 text-align: center;
-}    
+}
 
 .kalenderwd {
 width: 30px;
@@ -165,9 +165,8 @@ color: black;
 color: green;
 font-size: 14px;
 text-align: center;
-}    
+}
 
 p {
 padding: 5px 5px 5px 5px;
 }
-

@@ -1,0 +1,9 @@
+<h3>KOLOM 5</h3>
+<p>Vijfde kolom</p>
+{% for rubriek in site.data.gegevens5.rubrieken %}
+<h3>{{ rubriek.naam }}</h3><ul>
+{% for link in rubriek.links %}
+<li><a href="{{link.url}}" class="extern" title="{{link.naam}}"><img  alt="-" class="lijst" src="assets/img/groen.gif">{{link.naam}}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}

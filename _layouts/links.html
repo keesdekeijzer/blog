@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.author }}">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+{% seo %}
+<link rel="stylesheet" href="assets/css/links/base.css">
+<link rel="stylesheet" href="assets/css/links/layout.css">
+<link rel="stylesheet" href="assets/css/links/skeleton.css">
+<link rel="stylesheet" href="assets/css/links/startstijl.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="container">
+    <div class="container"> <!-- extra container -->
+
+    <div class="ten columns kop-links"><br>
+    <h1><a href="{{ "/" | absolute_url }}"><img src="{{ "/assets/img/logoblog.png" | relative_url }}" alt="Logo" /></a></h1> <!-- kop links -->
+    </div>
+
+    <div class="ten columns kop-rechts">
+    <!-- kop-rechts -->
+    <img src="{{ "/assets/img/logolinks.png" | relative_url }}" alt="Logo lang" />
+    </div>
+
+    <div class="sixteen columns onder-kop">
+    <p>{{ site.description | default: site.github.project_tagline }}</p> <!-- onder-kop -->
+    </div>
+
+    </div><!-- extra container -->
+
+    <div 	class="four columns kolom1">
+    {% include kolom1.html %} <!-- kolom1 -->
+    </div>
+
+    <div 	class="four columns kolom2">
+    {% include kolom2.html %} <!-- kolom2 -->
+    </div>
+
+    <div 	class="four columns kolom3">
+    {% include kolom3.html %} <!-- kolom3 -->
+    </div>
+
+    <div 	class="four columns kolom4">
+    {% include kolom4.html %} <!-- kolom4 -->
+    </div>
+
+    <div 	class="four columns kolom5">
+    {% include kolom5.html %} <!-- kolom5 -->
+    </div>
+
+    </div><!-- container -->
+
+    <div class="container"> <!-- extra container -->
+      {{ content }}
+    <!-- footer -->
+    <div class="sixteen columns footer">
+    {% include startfooter.html %} <!-- footer -->
+    </div>
+    </div><!-- extra container -->
+
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+</html>

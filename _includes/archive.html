@@ -21,6 +21,8 @@
     {% endif %}
   {% when 'tagpage' %}
   <a href="{{ tagname }}" class="knop">{{ tagname }}</a>&nbsp;-&nbsp;
+  {% when 'page' %}
+  <a href="../tag/{{ tagname }}" class="knop">{{ tagname }}</a>&nbsp;-&nbsp;
   {% else %}
   <a href="tag/{{ tagname }}" class="knop">{{ tagname }}</a>&nbsp;-&nbsp;
   {% endcase %}

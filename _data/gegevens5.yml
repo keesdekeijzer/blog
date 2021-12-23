@@ -1,0 +1,14 @@
+rubrieken:
+  - naam: Version control
+    links:
+      - naam: Github
+        url: https://github.com
+  - naam: Nieuws
+    links:
+      - naam: Nu.nl
+        url: https://nu.nl
+  - naam: Vim
+    links:
+      - naam: Vim gebruiken om tekstbestanden te bewerken
+        url: https://www.web2.nl/index.php?p=linux&a=vim_gebruiken_om_tekstbestanden_te_bewerken
+        
