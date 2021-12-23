@@ -1,4 +1,4 @@
-<footer">
+<footer>
 <p>Blog {{ page.layout }}</p>
 {% case page.layout %}
 {% when 'post' %}
@@ -14,12 +14,16 @@
 {% else %}
 {% assign pad = 'assets/img/rssfeed.png' %}
 {% endcase %}
-<p>subscribe <a href="/blog/feed.xml"><img src="{{ pad }}">via RSS</a></p>
-<div><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
-<div>
+<p><a href="/blog/feed.xml"><img src="{{ pad }}"> RSS feed</a></p>
+<p><a href="https://github.com/jekyll">
+  <svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg>
+  <span class="username">jekyll</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.twitter.com/jekyllrb">
+    <svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg>
+    <span class="username">jekyllrb</span></a>
+<p>
 {% if site.github.is_project_page %}
 This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
 {% endif %}
-</div>
-</div>
+</p>
 </footer>

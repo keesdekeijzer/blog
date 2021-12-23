@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.author }}">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
@@ -17,11 +23,7 @@
     {% include stijl.html %}
   </head>
   <body>
-    <div class="kopmenu" id="kopmenu2">
-    <ul class="nieuws-menu">
-    <li><a href='index'>blog</a></li>
-    </ul>
-    </div> <!-- kopmenu -->
+{% include kopmenu.html %}
 <div class="container houder"><div class="midden"><article id="Artikel"><div id="submenu"></div><h1>Artikelen</h1>
 {% for post in paginator.posts %}
 <p><a href="{{- post.url | relative_url -}}">{{post.title}}</a><br>- {{post.description}}</p>
