@@ -14,7 +14,7 @@ category: vac
 - Klik op Generate new token
 - Geef je token een naam
 - Bepaal de verloopdatum voor het token
-- Geef een omschrijving voor het token als geheuegnsteun voor jezelf
+- Geef een omschrijving voor het token als geheugensteun voor jezelf
 - Kies een Resource owner
 - Stel de toestemmingen in
 - Klik op generate token
