@@ -8,8 +8,7 @@
 
 **/etc/apt/apt.conf.d/** : Configuratiebestandsfragmenten voor APT. Configuratie-item: Dir::Etc::Parts.
 
-**/etc/apt/preferences** : Bestand met versievoorkeuren. Dit is waar u "pinning" kunt opgeven. Dit is een voorkeur voor het ophalen van bepaalde pakketten uit een aparte pakketbron of uit een andere versie van een distributie. Configuratie-item:
-           Dir::Etc::Preferences.
+**/etc/apt/preferences** : Bestand met versievoorkeuren. Dit is waar u "pinning" kunt opgeven. Dit is een voorkeur voor het ophalen van bepaalde pakketten uit een aparte pakketbron of uit een andere versie van een distributie. Configuratie-item: Dir::Etc::Preferences.
            
 **/etc/apt/preferences.d/** : Bestandsfragmenten met versievoorkeuren. Configuratie-item: Dir::Etc::PreferencesParts.
 
