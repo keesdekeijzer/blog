@@ -1,3 +1,12 @@
+---
+layout: post
+title: Bestanden voor apt
+date: 2023-05-06T00:00:40+00:00
+tags: apt
+description: bestanden voor apt
+category: linux
+---
+
 # Bestanden voor apt
 
 **/etc/apt/sources.list** : Locaties waarvandaan pakketten opgehaald moeten worden. Configuratie-item: Dir::Etc::SourceList.
